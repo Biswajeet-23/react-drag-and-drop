@@ -1,0 +1,48 @@
+.drag-and-drop-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.drag-and-drop {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #95dc80;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.drag-and-drop h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.dnd-item {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.dnd-item:hover {
+  background-color: #eab0b0;
+}
+
+.dnd-item.dragging {
+  opacity: 0.5;
+  transform: scale(1.05);
+  background-color: #ccc;
+}
+
+.drag-and-drop:hover {
+  background-color: #ab5050;
+}
